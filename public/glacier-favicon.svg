@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Glacier InfoTech</title>
+  <rect width="64" height="64" rx="14" fill="#0f766e"/>
+  <path fill="#fff" d="M8 48 27 15l9 15 7-10 14 28H8Zm25-8h14L43 28 33 40Z"/>
+  <path fill="#ea640e" d="m12 53 14-16 6 8 6-7 10 15H12Z"/>
+</svg>
