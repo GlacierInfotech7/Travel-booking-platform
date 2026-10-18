@@ -1,53 +1,63 @@
 # Glacier InfoTech Travel
 
-Glacier InfoTech Travel is a frontend-only travel and hotel booking website
-demo for the Glacier InfoTech agency portfolio. It preserves the original
-Next.js travel-template UI and page structure while replacing live services
-with local sample data and harmless browser-only demo state.
+Glacier InfoTech Travel is a frontend-only travel and hotel discovery website created as a portfolio project for **Glacier InfoTech**. It adapts the original Next.js travel template into a standalone demo with local sample data and simulated booking interactions.
 
-This project is based on the open-source
-[weisdevelopers/travel-template](https://github.com/weisdevelopers/travel-template).
-The original implementation and required author attribution are retained; this
-repository does not claim the upstream code was authored entirely by Glacier
-InfoTech. The upstream repository did not include a `LICENSE` file.
+The website preserves the original UI and page structure while removing dependencies on external APIs, databases, authentication providers, and payment services.
 
-## Demo features
+## Features
 
-- Responsive hotel discovery interface with the original Tailwind styling
-- Local destination search and sample hotel filtering
-- Local date-range and guest selection
-- Hotel detail pages, galleries, ratings, amenities, and illustrative map panels
-- Local favorites saved in browser `localStorage`
-- Simulated booking confirmation and local demo booking history
-- Demo access screen with no authentication requirement
-- No real reservations, payments, API requests, database writes, or user data
+- Responsive travel and hotel discovery interface
+- Destination search and hotel filtering using local sample data
+- Date-range selection and guest selection
+- Hotel detail pages with galleries, ratings, and amenities
+- Illustrative map panels without external map APIs
+- Browser-based favorites using `localStorage`
+- Simulated booking confirmation and demo booking history
+- Access to the demo without login or registration
+- Responsive layouts for desktop, tablet, and mobile
 
-## Technology
+**Note:** This is a demonstration website only. Hotel searches use sample data, and bookings are simulated. The website does not create real reservations, process payments, or communicate with hotel providers.
 
-- Next.js Pages Router
-- React and TypeScript
-- Tailwind CSS, Framer Motion, and React Date Range
-- Local mock data and browser `localStorage` only
+## Tech stack
 
-## Run locally
+- Next.js (Pages Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Date Range
+- Local mock data and browser `localStorage`
 
-Requirements: Node.js 18 or newer and npm.
+## Getting started
+
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+Clone your repository and navigate to the project directory:
 
 ```bash
 git clone <your-glacier-infotech-repository-url>
 cd Travel-booking-platform
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open <http://localhost:3000>. No `.env.local` file, API key, database, OAuth
-provider, payment account, or other external service is required.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The included [.env.example](./.env.example) and
-[.env.local.example](./.env.local.example) explicitly document that no
-environment variables are needed.
+No `.env.local` file, API keys, database, OAuth credentials, payment credentials, or external service accounts are required.
 
-## Validation
+## Build and validation
+
+Run the available project checks:
 
 ```bash
 npm test
@@ -55,13 +65,32 @@ npm run lint
 npm run build
 ```
 
-Vercel can deploy this project with the default Next.js settings. The
-`vercel-build` script is simply `next build`; no migration or credential setup
-is required.
+Some scripts may not be configured in the original project. Check `package.json` for the available commands and use the corresponding checks.
+
+## Deployment on Vercel
+
+1. Push the customized project to your GitHub repository.
+2. Import the repository into [Vercel](https://vercel.com/).
+3. Keep the default Next.js framework settings.
+4. Do not add environment variables for external services.
+5. Deploy the project.
+
+The production build should use the existing Next.js build script. No database migrations, API credentials, or payment configuration are required.
+
+## Project scope
+
+This portfolio adaptation is designed to demonstrate frontend development, responsive UI design, local state management, and interactive booking flows.
+
+- No backend or database
+- No authentication or user accounts
+- No external hotel-search or mapping APIs
+- No real bookings or payment processing
+- No external environment variables required
 
 ## Attribution
 
-The UI and project foundation are based on the original
-[weisdevelopers/travel-template](https://github.com/weisdevelopers/travel-template).
-Glacier InfoTech branding, frontend-only mock flows, local data, and deployment
-documentation were added for this portfolio adaptation.
+This project is based on the open-source UI and code foundation of [weisdevelopers/travel-template](https://github.com/weisdevelopers/travel-template).
+
+Glacier InfoTech branding, local mock data, frontend-only interactions, and deployment documentation have been adapted for this portfolio project.
+
+The upstream repository did not include a `LICENSE` file. Please verify the original author's licensing terms and obtain permission if required before distributing or using the adapted project commercially. Do not assume that the absence of a license grants permission for unrestricted reuse.
